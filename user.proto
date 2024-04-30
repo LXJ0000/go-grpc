@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package user;
+option go_package = "user";
+
+message User {
+    int64 user_id = 1;
+    string email = 2;
+    string password = 3;
+}
+
+service UserService {
+    // rpc Create (SignupRequest) returns (SignupResponse);
+    // rpc GetByEmail (LoginRequest) returns (LoginResponse);
+    // rpc GetByID () returns ();
+    // rpc ExtractIDFromToken () returns ();
+    // rpc CreateAccessToken () returns ();
+    // rpc CreateRefreshToken (RefreshTokenRequest) returns (RefreshTokenResponse);
+}
+
+message LoginRequest {
+
+}
+
+message LoginResponse {
+
+}
+
+message RefreshTokenRequest {
+
+}
+
+message RefreshTokenResponse {
+
+}
+
+message SignupRequest {
+
+}
+
+message SignupResponse {
+
+}
+
+message ErrorResponse {
+
+}
+
+message SuccessResponse {
+
+}
